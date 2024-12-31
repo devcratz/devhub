@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/devcratz/devhub/refs/heads/main/interface'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "devhub",
@@ -171,4 +171,3 @@ local Button = MCTab:CreateButton({
    -- The function that takes place when the button is pressed
    end,
 })
-
