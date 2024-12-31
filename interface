@@ -19,10 +19,10 @@ local ConfigurationExtension = ".rfld"
 local settingsTable = {
 	General = {
 		-- if needs be in order just make getSetting(name)
-		rayfieldOpen = {Type = 'bind', Value = 'K', Name = 'Rayfield Keybind'},
+		rayfieldOpen = {Type = 'bind', Value = 'K', Name = 'keybind mf'},
 	},
 	System = {
-		analytics = {Type = 'toggle', Value = true, Name = 'Anonymised Analytics'},
+		analytics = {Type = 'toggle', Value = true, Name = 'anonymised analytics'},
 	}
 }
 
@@ -65,7 +65,7 @@ local function loadSettings()
         		"analytics": {
            	 	"Value": true,
           		  	"Type": "toggle",
-        		    "Name": "Anonymised Analytics"
+        		    "Name": "anonymised analytics"
        			}
     		}
 		}
@@ -1335,14 +1335,14 @@ local function createSettings(window)
 		return
 	end
 	
-	local newTab = window:CreateTab('settings', 0, true)
+	local newTab = window:CreateTab('Rayfield Settings', 0, true)
 
-	if TabList['settings'] then
-		TabList['settings'].LayoutOrder = 1000
+	if TabList['Rayfield Settings'] then
+		TabList['Rayfield Settings'].LayoutOrder = 1000
 	end
 
-	if Elements['settings'] then
-		Elements['settings'].LayoutOrder = 1000
+	if Elements['Rayfield Settings'] then
+		Elements['Rayfield Settings'].LayoutOrder = 1000
 	end
 
 	-- Create sections and elements
