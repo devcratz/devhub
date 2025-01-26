@@ -80,7 +80,7 @@ local Section = MainTab:CreateSection("tutuhub (paid!)")
 local Button = MainTab:CreateButton({
    Name = "tuhub",
    Callback = function()
-script_key="CsTwmXsszpwjHWHvgzeFzMltTrOgLeYH";
+script_key="KSTxsNVYVVsbYjMJUvfARIgNqcXjoQLw";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7e559890f0be877038959448042824d4.lua"))()
    end,
 })
